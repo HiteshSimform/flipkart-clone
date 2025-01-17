@@ -87,7 +87,7 @@ body {
 .more-btn,
 .cart-btn,
 .seller-button {
-    height: 60%;
+    height: 50%;
     width: 7vw;
     min-width: min-content;
     padding: 0 5px;
