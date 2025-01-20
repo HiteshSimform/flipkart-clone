@@ -29,6 +29,16 @@ body {
     align-items: center;
 }
 
+.dropdown-menu {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
 
 .logo {
     height: 50%;
@@ -70,6 +80,7 @@ body {
 .search-button:hover {
     color: #1a5dc6;
 }
+
 .search input:focus {
     border: 1px solid #2874F0;
     box-shadow: 0 0 5px rgba(40, 116, 240, 0.5);
@@ -80,8 +91,6 @@ body {
         width: 60%;
     }
 }
-
-
 
 .login-button,
 .more-btn,
@@ -145,7 +154,7 @@ body {
     text-overflow: ellipsis; */
 }
 
-.cat-name{
+.cat-name {
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
@@ -248,10 +257,6 @@ body {
     margin: 25px auto;
     width: 90%;
 }
-
-
-
-
 
 .nav-search {
     display: flex;

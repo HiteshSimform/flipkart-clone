@@ -28,8 +28,22 @@
         <div class="element">
             <button class="login-button">Login</button>
             <button class="seller-button">Become a Seller</button>
-            <button type="menu" class="more-btn">More<i class="fa-solid fa-angle-down rotate"></i>
-            </button>
+            <!-- <button type="menu" class="more-btn">More<i class="fa-solid fa-angle-down rotate"></i>
+            </button> -->
+            <div class="dropdown">
+                <button class="more-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    More
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bell"></i>Notfication Preferences</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">24 x 7 Customer Care</a></li>
+                    <li><a class="dropdown-item" href="#">Advertise</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-download" aria-hidden="true"></i>Download
+                            App</a></li>
+                </ul>
+            </div>
             <button class="cart-btn"><span><i class="fa-solid fa-cart-shopping"></i></span>Cart</button>
         </div>
     </div>
@@ -78,15 +92,21 @@
     <!-- Deals of the Day -->
     <div class="main-container">
         <div class="product-container">
+           
             <div class="products-section">
                 <div class="section-header">
-                    <p class="header-text">
+                    <div class="header-text" style="display: flex; padding-top: 30px;">
                         Deals of the day
+                        <!-- <span>
+                            <a href="#" class="shop-now">Shop Now!</a>
+                            
+                        </span> -->
                         <span class="countdown-timer">
                             <i class="fa-regular fa-clock"></i>
                             <span class="time-remaining"> 22: 07: 36 Left</span>
                         </span>
-                    </p>
+                    </div>
+
                     <button type="button" class="view-all-btn">VIEW ALL</button>
                 </div>
                 <div class="product-list">
